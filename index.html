@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>Landing Page Assignment</title>
+
+        <style>
+
+             *{
+
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+             }   
+
+
+             div#container{
+                width:1600px;
+                height:3000px;
+                /* background-color: skyblue; */
+                border-width: 2px;
+                border-color: black;
+                border-style: solid;
+                margin:0 auto;
+                position:relative;
+                overflow: hidden;
+
+             }
+
+             div#header{
+                width:inherit;
+                height:140px;
+                background-color: lavender;
+               
+
+             }
+
+             h1#logo{
+                 left:200px;
+                 float: left;
+             }
+
+             div#menu{
+
+                top: 50px;
+                width:1000px;
+                height:50px;
+                /* background-color:yellow; */
+                position: absolute;
+                left:300px;
+                box-sizing: border-box;
+             }
+
+             #menu ul{
+                padding-top:10px;
+                list-style-type: none;
+                 display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                box-sizing: border-box;
+                font-size: 20px;
+                font-weight: bold;
+                
+             }
+
+             div#sectionOne{
+                width: inherit;
+              height:600px;
+              /* background-color:salmon; */
+              
+               /* padding-top:50px; */
+               box-sizing: border-box;
+
+
+             }
+
+             div#sectionOneA {
+            width: 600px;
+            height:600px;
+            /* background-color:pink; */
+            float:left;
+            text-align: center;
+            padding-top: 250px;
+            
+           
+
+         
+        }
+
+        div#sectionOneB {
+            width: 800px;
+            height:600px;
+            background-image: url("images/illustration.png");
+            float:right;
+            background-position: center;
+            background-repeat: no-repeat;
+         
+        }
+
+        div#servicesInfo{
+
+            width:inherit;
+            height:100px;
+            /* background-color: red; */
+            flex-direction: row;
+            text-align: center;
+            align-items: center;
+            padding-top: 20px;
+            
+
+
+        }
+
+
+
+        div#servicesLogos{
+
+            width:inherit;
+            height:500px;
+            /* background-color: yellow; */
+           
+          
+           
+
+            }
+
+            div#servicesLogoOne{
+
+                width:inherit;
+                height:250px;
+                /* background-color: grey; */
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+
+
+            }
+
+
+            div#servicesLogoTwo{
+
+                width:inherit;
+                height:250px;
+                /* background-color: goldenrod; */
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+
+
+            }
+
+
+        div.item{
+            width:300px;
+            height: 200px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+            text-align: center;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+
+
+
+        div#bannerOne{
+            width: inherit;
+              height:500px;
+              /* background-color:blue; */
+              
+               /* padding-top:50px; */
+               box-sizing: border-box;
+
+             }
+
+        div#bannerOneA {
+                      
+            width: 800px;
+            height:500px;
+            background-image: url("images/section-1.png");
+            float:left;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* border: 10px;
+            border-style: solid;
+            border-color: black; */
+        
+        }
+
+        div#bannerOneB {
+
+            width: 800px;
+            height:500px;
+            /* background-color:red; */
+            float:right;
+            text-align: center;
+            /* border: 10px;
+            border-style: solid;
+            border-color: black;  
+             */
+            padding-top: 250px;
+         
+        }
+
+
+        div#bannerTwo{
+                width: inherit;
+              height:500px;
+              /* background-color:limegreen; */
+              
+               /* padding-top:50px; */
+               box-sizing: border-box;
+
+        }
+
+
+        div#bannerTwoA {
+            width: 800px;
+            height:500px;
+            /* background-color:pink; */
+            float:left;
+            text-align: center;
+            padding-top: 250px;
+
+            /* border: 10px;
+            border-style: solid;
+            border-color: black;                                */
+
+         
+        }
+
+        div#bannerTwoB {
+            width: 800px;
+            height:500px;
+            background-image: url("images/section-2.png");
+            float:right;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* border: 10px;
+            border-style: solid;
+            border-color: black; */
+         
+        }
+
+
+        div#bottomSectionMain{
+             width: inherit;
+              height:500px;
+              /* background-color:blue; */
+              
+               /* padding-top:50px; */
+            box-sizing: border-box;
+            
+              
+           
+               
+
+             }
+
+
+        div#bottomSectionBody{
+              width: 1000px;
+              height:400px;
+              background-color:skyblue;
+              margin: auto;
+              
+               
+               border-radius: 15px;
+              
+               /* padding-top:50px; */
+               box-sizing: border-box;
+               top:50px;
+               
+
+        }
+
+        div#bottomSectionBodyTitle{
+              width: inherit;
+              height:100px;
+              /* background-color:pink; */
+              text-align: center;
+              padding-top: 50px;
+                       
+
+        }
+
+        div#bottomSectionBodyBannerA{
+              width: 500px;
+              height:250px;
+              /* background-color:yellow; */
+              float:left;
+              
+           
+        }
+
+        div#bottomSectionBodyBannerB{
+              width: 500px;
+              height:250px;
+              /* background-color:orange; */
+              float:right;
+              text-align: center;
+              padding-top: 100px;
+
+        }
+
+        div#bottomSectionBodyBannerA1{
+              width: 250px;
+              height:250px;
+              /* background-color:red; */
+              /* background-image: url("images/user.png"); */
+              /* border-radius: 50%; */
+              background-repeat: no-repeat;
+              float: left;
+              padding: 50px 50px 50px 50px;
+              
+             
+        }
+
+        div#bottomSectionBodyBannerA2{
+              width: 250px;
+              height:250px;
+              /* background-color:grey; */
+              float: right;
+              text-align: center;
+              padding-top: 100px;
+        }
+
+
+
+
+
+
+
+
+        </style>
+
+
+    </head>
+
+
+
+    <body>
+        <div id="container">
+            <div id="header">
+
+                <h1 id="logo">LOGO</h1>
+
+                <div id="menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>Find a doctor</li>
+                        <li>Apps</li>
+                        <li>Testimonials</li>
+                        <li>About Us</li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+            <!-- header ends there -->
+
+
+            <div id="sectionOne">
+                <div id="sectionOneA">
+                    <h1>Virtual Healtcare for you</h1>
+                    <p>An apple a day keeps the doctor away</p>
+
+                </div>
+
+                <div id="sectionOneB">
+                </div>
+ 
+            </div>
+            <!-- Section 1 Ends here -->
+
+            <div id="servicesInfo">
+                <h1>Our Services</h1>
+                <p>An apple a day keeps the doctor away</p>
+
+
+            </div>
+            <!-- Services info ends here -->
+
+
+            <div id="servicesLogos">
+
+
+                <div id="servicesLogoOne">
+          
+                        <div class="item">
+                            <img src="images/Frame-1.png"/>
+                            <h1>Item Number One</h1>
+
+
+                        </div>
+                        <div class="item">
+                            
+                            <img src="images/Frame-2.png"/>
+                            <h1>Item Number Two</h1>
+                        </div>
+
+                        <div class="item">
+                            <img src="images/Frame-3.png"/>
+                            <h1>Item Number Three</h1>
+                        </div>
+                 </div>
+
+
+                 <div id="servicesLogoTwo">
+          
+                    <div class="item">
+                        <img src="images/Frame-4.png"/>
+                        <h1>Item Number Four</h1>
+
+
+                    </div>
+                    <div class="item">
+                        
+                        <img src="images/Frame-5.png"/>
+                        <h1>Item Number Four</h1>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/Frame-6.png"/>
+                        <h1>Item Number Four</h1>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Services section ends -->
+
+
+            <div id="bannerOne">
+
+                <div id="bannerOneA">
+                    
+
+                </div>
+
+                <div id="bannerOneB">
+                    <h1>Leading healthcare providers</h1>
+                    <p>An apple a day keeps the doctor away</p>
+                </div>
+                
+
+
+
+            </div>
+
+
+
+            <div id="bannerTwo">
+
+                <div id="bannerTwoA">
+                    <h1>Download our mobile apps</h1>
+                    <p>An apple a day keeps the doctor away</p>
+
+                </div>
+
+                <div id="bannerTwoB">
+                </div>
+                
+                
+
+
+
+            </div>
+
+            <!-- Banners end here -->
+
+            <div id="bottomSectionMain">
+                <div id="bottomSectionBody">
+                    <div id="bottomSectionBodyTitle">
+                        <h1>What our customers are saying</h1>
+
+                    </div>
+
+                    <div id="bottomSectionBodyBannerA">
+                        <div id="bottomSectionBodyBannerA1">
+
+                            <img src="images/user.png" />
+
+
+                        </div>
+
+
+                        <div id="bottomSectionBodyBannerA2">
+                            <h2>text here</h2>
+
+                            
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div id="bottomSectionBodyBannerB">
+                        <h1>Text is here</h1>
+                        
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </body>
